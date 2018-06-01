@@ -8,6 +8,7 @@
       </ul>
     </div>
     <button @click="clickme">点我</button>
+    <img :src="imgPath"/>
   </div>
 </template>
 <script>
@@ -18,7 +19,8 @@ export default {
   data () {
     return {
       newItem: '',
-      items: store.fetch()
+      items: store.fetch(),
+      imgPath: 'http://192.168.221.128:8080/examples/test.jpg'
     }
   },
   methods: {
